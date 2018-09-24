@@ -118,7 +118,5 @@ actual.append(scl.inverse_transform(y_test[i].reshape(-1,1)))
 result_df = pd.DataFrame({'Predicted':list(np.reshape(predicted,-1)),
                           'Actual':list(np.reshape(actual,-1))})
 
-Xt = model.predict(X_test)
-plt.plot(scl.inverse_transform(y_test.reshape(-1,1)))
-plt.plot(scl.inverse_transform(Xt))
+
 

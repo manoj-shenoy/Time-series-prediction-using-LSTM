@@ -51,7 +51,7 @@ test_data = scaler.transform(test_data).reshape(-1)
 cl = data['Close'].values.reshape(data['Close'].shape[0],1)
 cl = scl.fit_transform(cl)
 
-# Create a function to process the data into N day lookback slioes
+# Create a function to process the data into N day lookback periods
 def processData(data,lookback):
     X,Y = [],[]
     for i in range(len(data)-lookback-1):
